@@ -4,17 +4,16 @@ import requests
 import tkinter as tk
 import webbrowser
 
-# Constants
 WINDOW_TITLE = "Recipe App"
 RECIPE_IMAGE_WIDTH = 300
 RECIPE_IMAGE_HEIGHT = 300
-SPOONACULAR_API_KEY = "551362774526425f8bfac59f760cc504"
-SPOONACULAR_URL = "https://api.spoonacular.com/recipes/complexSearch"
+SPOONACULAR_API_KEY = "551362774526425f8bfac59f760cc504" #here you put your own key
+SPOONACULAR_URL = "https://api.spoonacular.com/recipes/complexSearch"  # we use spoonacular site web that contain the recipes
 SPOONACULAR_RECIPE_URL = "https://api.spoonacular.com/recipes/{}/information"
 
 class RecipeApp(object):
 
-    def __init__(self):  # Fixed constructor name
+    def __init__(self):  
         self.window = tk.Tk()
 
         # Auto resize geometry
@@ -112,7 +111,6 @@ class RecipeApp(object):
         self.window.mainloop()
 
 
-# Create App and run the app
 if __name__ == "__main__":
     recipe_app = RecipeApp()
     recipe_app.run_app()
